@@ -22,6 +22,7 @@
 		96028E0D190B5C9900D98812 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96028DEC190B5C9900D98812 /* UIKit.framework */; };
 		96028E15190B5C9900D98812 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96028E13190B5C9900D98812 /* InfoPlist.strings */; };
 		96028E17190B5C9900D98812 /* DNApp_PrototypeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96028E16190B5C9900D98812 /* DNApp_PrototypeTests.m */; };
+		967CBCA7190C9C9C001DE20F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 967CBCA6190C9C9C001DE20F /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		96028E12190B5C9900D98812 /* DNApp-PrototypeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DNApp-PrototypeTests-Info.plist"; sourceTree = "<group>"; };
 		96028E14190B5C9900D98812 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		96028E16190B5C9900D98812 /* DNApp_PrototypeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNApp_PrototypeTests.m; sourceTree = "<group>"; };
+		967CBCA5190C9C9C001DE20F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		967CBCA6190C9C9C001DE20F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +117,12 @@
 		96028DEE190B5C9900D98812 /* DNApp-Prototype */ = {
 			isa = PBXGroup;
 			children = (
+				96028E20190B5EC800D98812 /* iPad */,
 				96028DF7190B5C9900D98812 /* AppDelegate.h */,
 				96028DF8190B5C9900D98812 /* AppDelegate.m */,
 				96028DFA190B5C9900D98812 /* Main_iPhone.storyboard */,
+				967CBCA5190C9C9C001DE20F /* HomeViewController.h */,
+				967CBCA6190C9C9C001DE20F /* HomeViewController.m */,
 				96028DFD190B5C9900D98812 /* Main_iPad.storyboard */,
 				96028E00190B5C9900D98812 /* ViewController.h */,
 				96028E01190B5C9900D98812 /* ViewController.m */,
@@ -153,6 +159,13 @@
 				96028E13190B5C9900D98812 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96028E20190B5EC800D98812 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +269,7 @@
 				96028E02190B5C9900D98812 /* ViewController.m in Sources */,
 				96028DF9190B5C9900D98812 /* AppDelegate.m in Sources */,
 				96028DF5190B5C9900D98812 /* main.m in Sources */,
+				967CBCA7190C9C9C001DE20F /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,7 +407,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DNApp-Prototype/DNApp-Prototype-Prefix.pch";
 				INFOPLIST_FILE = "DNApp-Prototype/DNApp-Prototype-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -406,7 +422,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DNApp-Prototype/DNApp-Prototype-Prefix.pch";
 				INFOPLIST_FILE = "DNApp-Prototype/DNApp-Prototype-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -470,6 +488,7 @@
 				96028E1C190B5C9900D98812 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96028E1D190B5C9900D98812 /* Build configuration list for PBXNativeTarget "DNApp-PrototypeTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +497,7 @@
 				96028E1F190B5C9900D98812 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
